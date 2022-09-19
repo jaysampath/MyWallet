@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  mysql:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+    environment:
+      c: localhost
+      MYSQL_DATABASE: wallet
+      MYSQL_USER: sampath
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: password
+      JWT_SIGNING_KEY: 4u7x!A%D*G-KaPdRgUkXp2s5v8y/B?E(H+MbQeThWmYq3t6w9z$C&F)J@NcRfUjX
+      JWT_EXPIRATION_TIME: 5
+
+
+volumes:
+  db-data:
