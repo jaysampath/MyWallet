@@ -1,1 +1,7 @@
 target/
+./MyWalletBe/target/
+*.class
+.idea/
+MyWallet.iml
+
+
