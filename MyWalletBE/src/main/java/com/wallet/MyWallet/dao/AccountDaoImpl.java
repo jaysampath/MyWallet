@@ -118,7 +118,7 @@ public class AccountDaoImpl implements AccountDao{
     public BalanceResponse getBalance(Long userId, String userEmail) {
         Account account = this.getUserById(userId);
         if(account == null)
-            return null;
+            throw new AccountNotFoundException("Account not found.");
 
         return new BalanceResponse(account.getId(), account.getEmail(), account.getBalance());
     }

@@ -47,4 +47,20 @@ public class GlobalExceptionHandler {
                 response, HttpStatus.NOT_ACCEPTABLE
         );
     }
+
+    @ExceptionHandler
+    public ResponseEntity<ExceptionResponse> handleInvalidInputException(InvalidInputException exception){
+        ExceptionResponse response = new ExceptionResponse(HttpStatus.NOT_ACCEPTABLE.value(), exception.getMessage(), System.currentTimeMillis());
+        return new ResponseEntity<>(
+                response, HttpStatus.NOT_ACCEPTABLE
+        );
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<ExceptionResponse> handleException(Exception exception){
+        ExceptionResponse response = new ExceptionResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(), exception.getMessage(), System.currentTimeMillis());
+        return new ResponseEntity<>(
+                response, HttpStatus.INTERNAL_SERVER_ERROR
+        );
+    }
 }

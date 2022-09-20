@@ -10,6 +10,6 @@ public class TestController {
 
     @GetMapping("/get")
     public String test(){
-        return "<h1> Hello World! </h1>" ;
+        return "<h1> Hello World! JWT token verification done! </h1>" ;
     }
 }

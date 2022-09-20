@@ -31,9 +31,4 @@ public class TransactionDaoImpl implements TransactionDao{
     public List<Transaction> getAllTransactionsByUserEmail(String userEmail) {
         return repository.findAllByUserEmail(userEmail);
     }
-
-    @Override
-    public void deleteAllTransactionsByUserId(Long userId) {
-
-    }
 }

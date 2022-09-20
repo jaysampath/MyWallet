@@ -12,5 +12,4 @@ public interface TransactionDao {
 
     List<Transaction> getAllTransactionsByUserEmail(String userEmail);
 
-    void deleteAllTransactionsByUserId(Long userId);
 }
