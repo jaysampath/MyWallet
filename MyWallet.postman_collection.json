@@ -41,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"jayasampath111@gmail.com\",\r\n    \"username\": \"JayaSampath\",\r\n    \"password\": \"secret\",\r\n    \"type\": \"normal\",\r\n    \"status\": \"active\",\r\n    \"transactionPassword\": \"Secret@200\",\r\n    \"balance\": 0,\r\n    \"preferredUsername\": \"JayaSampath\"\r\n}",
+							"raw": "{\r\n    \"userEmail\": \"jayasampath111@gmail.com\",\r\n    \"username\": \"JayaSampath\",\r\n    \"prettyName\" : \"Jay\",\r\n    \"accountPassword\": \"secret\",\r\n    \"accountType\": \"normal\",\r\n    \"status\": \"active\",\r\n    \"transactionPassword\": \"Secret@200\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -260,7 +260,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userId\" : 1,\r\n    \"userEmail\" : \"jayasampath111@gmail.com\",\r\n    \"transactionType\" : \"DEBIT\",\r\n    \"transactionPassword\" : \"Secret@20\",\r\n    \"amount\" : 30\r\n}",
+							"raw": "{\r\n    \"userId\" : 1,\r\n    \"userEmail\" : \"jayasampath111@gmail.com\",\r\n    \"transactionType\" : \"DEBIT\",\r\n    \"transactionPassword\" : \"Secret@200\",\r\n    \"amount\" : 30\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
